@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+        <div class="calculator p-3 rounded-5 shadow">
+
+            <input id="input" type="text" class="form-control text-end fs-2 mb-3 display"
+                placeholder="0" readonly>
+
+            <div class="row g-2">
+
+                <div class="col-3">
+                    <button onclick="clearAll()" id="ac" class="btn w-100 calc-btn gray">AC</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="removeLastItem()" id="delete" class="btn w-100 calc-btn gray">DEL</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('%')" class="btn w-100 calc-btn operator">%</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('/')" class="btn w-100 calc-btn operator">/</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('7')" class="btn w-100 calc-btn number">7</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('8')" class="btn w-100 calc-btn number">8</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('9')" class="btn w-100 calc-btn number">9</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('x')" class="btn w-100 calc-btn operator">x</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('4')" class="btn w-100 calc-btn number">4</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('5')" class="btn w-100 calc-btn number">5</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('6')" class="btn w-100 calc-btn number">6</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('-')" class="btn w-100 calc-btn operator">−</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('1')" class="btn w-100 calc-btn number">1</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('2')" class="btn w-100 calc-btn number">2</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('3')" class="btn w-100 calc-btn number">3</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('+')" class="btn w-100 calc-btn operator">+</button>
+                </div>
+
+                <div class="col-6">
+                    <button onclick="displayData('0')" class="btn w-100 calc-btn number zero">0</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="displayData('.')" class="btn w-100 calc-btn number">.</button>
+                </div>
+
+                <div class="col-3">
+                    <button onclick="result()" id="equals" class="btn w-100 calc-btn equals">=</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
